@@ -1,0 +1,283 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-items{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+}
+
+
+.nav-links-1 {
+  display: flex;
+  margin-right: 10px;
+  }
+
+
+  .nav-links-2{
+    display: flex;
+  }
+
+
+  
+
+
+.nav-links{
+     
+  margin: 5px 8px 0 8px;
+  text-decoration: none;
+  color: #202124;
+}
+
+.nav-links:hover{
+text-decoration: underline;
+}
+
+.dots{
+height: 25px;
+opacity: 0.6;
+position: relative;
+bottom: 2px;
+top: 1px;
+border-radius: 50%;
+}
+
+.dots:hover{
+border-radius: 50%;
+box-shadow: 2px 2px 2px 4px #EFEFEF;
+background-color: #EFEFEF;
+}
+
+
+.nav-image{
+position: relative;
+
+background-size: 32px 32px;
+border-radius: 50%;
+width: 32px;
+height:32px;
+background-image: url(https://avatars.githubusercontent.com/u/76674591?s=400&u=56618834348a8f2fc7517e07aff6c54b93390ba3&v=4);
+}
+
+.nav-image:hover{
+border-radius: 50%;
+box-shadow: 1px 1px 8px 1px gray;
+}
+
+
+
+
+
+
+#google-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 33px;
+    margin-bottom: 25px;
+}
+
+
+#search-box{
+    
+    position: relative;
+    margin:0 auto;
+    width: 560px;
+    height: 44px;
+    border-radius:30px;
+    border:1px solid #dcdcdc;
+    
+}
+
+#search-box:hover{
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+
+#search-box:focus-within{
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  outline:none;
+}
+
+.search-input{
+  position: relative;
+  height: 34px;
+  width: 500px;
+  border:none;
+  font-size:16px;
+  outline: none;
+  left: 21px;
+  top: 5px;
+  font-family: arial,sans-serif;
+  font-size: 16px;
+  color:#222;
+}
+
+.search-icon{
+  position: relative;
+  left: 14px;
+  top: 7px;
+  height: fit-content;
+  width: 14px;
+}
+
+.microphone-icon{
+  position: relative;
+  top: 8px;
+  left: 5px;
+  height: fit-content;
+  width: 14px;
+}
+
+#button-box{
+    display: flex;
+    justify-content: center;
+    flex-grow: 3;
+    padding: 15px;
+    position: relative;
+}
+
+.google-search-button{
+    margin: 0 5px;
+    padding: 0 10px;
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color:#3c4043;
+    text-align: center;
+    padding: 0 16px;
+    margin: 11px 4px;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+}
+
+.google-search-button:hover{
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+ background-color:  #f8f9fa;
+ border:1px solid #dadce0;
+ color: #202124;
+}
+
+
+
+
+
+footer{
+
+  position: fixed; 
+  left :0px;
+  width:100%;
+  bottom:0;
+  height: 30px;
+  font-size: 14px;
+  background-color:#f2f2f2;
+ 
+}
+
+#footer-child{
+  position: fixed; 
+  width: 100%;
+  height: 80px;
+  left :0;
+  bottom:0;
+  display: flex;
+  padding: 0 20px;
+  background-color:#f2f2f2;
+  text-align: center;
+}
+
+.footer-child{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#left-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  top: 10px;
+}
+#right-section{
+  display: flex;
+  position: relative;
+  top: 10px;
+  right: 30px;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.footer-link{
+  font-size: 14px;
+  color:#70757a;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.footer-link:hover{
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width : 600px)
+{
+  
+  #search-box{
+    width: 480px;
+  }
+  
+  .search-input{
+    width: 400px;
+  }
+  
+  .microphone-icon{
+    position: relative;
+    top:10px;
+    right: 10px;;
+  }
+  
+  .footer-child{
+    justify-content: space-evenly;
+    
+  }
+  .footer-link{
+    padding: 20px;
+  }
+
+ #left-section{
+   position: relative;
+   top: 4px;
+ }
+ #right-section{
+   position: relative;
+   bottom: 20px;
+   top: -20px;
+ }
+}
+
+@media only screen
+and (min-width : 601px)
+and (max-width : 1024px){
+  .footer-link{
+    padding: 10px;
+  }
+
+  .footer-child{
+    justify-content: space-evenly;
+    
+  }
+
+  #left-section{
+    position: relative;
+    top: 25px;;
+  }
+  
+  #right-section{
+    position: relative;
+    top: 25px;
+  }
+}
+
